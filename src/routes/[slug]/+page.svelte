@@ -6,8 +6,6 @@
 	import type { PageData } from './$types';
 	let { data }: { data: PageData } = $props();
 
-	console.log('Content: ', data.content);
-
 	const author = 'Matthew Littrell';
 	const isoDate = toIsoDate(data.meta.date);
 	const tags = data.meta.tags.join(',');
